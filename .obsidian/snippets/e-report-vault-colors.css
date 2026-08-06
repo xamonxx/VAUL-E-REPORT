@@ -1,0 +1,223 @@
+/*
+  E-Report Obsidian modern color system
+  Dark graphite UI, neon-soft accents, and folder/domain scan colors.
+*/
+
+:root {
+  --ereport-bg: #0b0d12;
+  --ereport-bg-2: #10141c;
+  --ereport-panel: #151a24;
+  --ereport-panel-2: #1b2230;
+  --ereport-border: rgba(148, 163, 184, 0.16);
+  --ereport-border-strong: rgba(148, 163, 184, 0.26);
+  --ereport-text: #edf2ff;
+  --ereport-muted: #9aa7b8;
+  --ereport-dim: #687386;
+  --ereport-blue: #3b82f6;
+  --ereport-cyan: #06b6d4;
+  --ereport-teal: #14b8a6;
+  --ereport-green: #10b981;
+  --ereport-lime: #84cc16;
+  --ereport-amber: #f59e0b;
+  --ereport-gold: #eab308;
+  --ereport-orange: #f97316;
+  --ereport-red: #ef4444;
+  --ereport-purple: #8b5cf6;
+  --ereport-slate: #94a3b8;
+}
+
+body {
+  --background-primary: var(--ereport-bg);
+  --background-secondary: #090b10;
+  --background-secondary-alt: var(--ereport-bg-2);
+  --background-modifier-border: var(--ereport-border);
+  --text-normal: var(--ereport-text);
+  --text-muted: var(--ereport-muted);
+  --text-faint: var(--ereport-dim);
+  --interactive-accent: var(--ereport-blue);
+  --interactive-accent-hover: #7bb8ff;
+  --tab-text-color-focused-active-current: var(--ereport-text);
+  --titlebar-background: #080a0f;
+  --titlebar-background-focused: #080a0f;
+}
+
+.workspace,
+.workspace-leaf-content,
+.mod-root .workspace-tab-header-container {
+  background: radial-gradient(circle at 50% -10%, rgba(90, 167, 255, 0.10), transparent 34%),
+    linear-gradient(180deg, #0d1017 0%, #090b10 100%);
+}
+
+.workspace-split.mod-left-split,
+.workspace-ribbon,
+.side-dock-ribbon,
+.workspace-tabs {
+  background: rgba(10, 12, 18, 0.94);
+}
+
+.workspace-leaf,
+.workspace-tab-container {
+  border-color: var(--ereport-border);
+}
+
+.nav-header,
+.workspace-tab-header-container {
+  border-bottom: 1px solid var(--ereport-border);
+}
+
+.nav-folder-title,
+.nav-file-title {
+  border-radius: 8px;
+  margin: 2px 8px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  transition: background 140ms ease, color 140ms ease, transform 140ms ease;
+}
+
+.nav-folder-title:hover,
+.nav-file-title:hover {
+  background: rgba(90, 167, 255, 0.10);
+  transform: translateX(2px);
+}
+
+.nav-folder-title.is-active,
+.nav-file-title.is-active {
+  background: linear-gradient(90deg, rgba(90, 167, 255, 0.20), rgba(45, 212, 191, 0.09));
+  color: var(--ereport-text);
+  box-shadow: inset 2px 0 0 var(--ereport-blue);
+}
+
+.nav-folder-title[data-path^="01-Overview"] {
+  color: var(--ereport-amber);
+}
+
+.nav-folder-title[data-path^="02-Architecture"] {
+  color: var(--ereport-purple);
+}
+
+.nav-folder-title[data-path^="03-Backend"],
+.nav-folder-title[data-path^="15-Backend-Internals"] {
+  color: var(--ereport-green);
+}
+
+.nav-folder-title[data-path^="04-Frontend"],
+.nav-folder-title[data-path^="14-Frontend-UI"] {
+  color: var(--ereport-cyan);
+}
+
+.nav-folder-title[data-path^="05-Database"] {
+  color: var(--ereport-orange);
+}
+
+.nav-folder-title[data-path^="06-API"] {
+  color: var(--ereport-blue);
+}
+
+.nav-folder-title[data-path^="07-Workflows"],
+.nav-folder-title[data-path^="11-Modules"] {
+  color: var(--ereport-teal);
+}
+
+.nav-folder-title[data-path^="08-Ops"],
+.nav-folder-title[data-path^="13-Testing"] {
+  color: var(--ereport-lime);
+}
+
+.nav-folder-title[data-path^="09-Decisions"],
+.nav-folder-title[data-path^="10-Change-Log"] {
+  color: var(--ereport-gold);
+}
+
+.nav-folder-title[data-path^="12-Security"] {
+  color: var(--ereport-red);
+}
+
+.nav-folder-title[data-path^="16-Glossary"] {
+  color: var(--ereport-slate);
+}
+
+.markdown-preview-view,
+.markdown-source-view.mod-cm6 .cm-scroller {
+  background: transparent;
+}
+
+.markdown-preview-view h1,
+.cm-header-1 {
+  color: var(--ereport-blue);
+  letter-spacing: 0;
+}
+
+.markdown-preview-view h2,
+.cm-header-2 {
+  color: var(--ereport-cyan);
+  letter-spacing: 0;
+}
+
+.markdown-preview-view h3,
+.cm-header-3 {
+  color: var(--ereport-amber);
+}
+
+.markdown-preview-view a.internal-link,
+.cm-hmd-internal-link,
+.cm-link {
+  color: #8bbcff;
+  text-decoration-color: rgba(139, 188, 255, 0.35);
+}
+
+.markdown-preview-view strong,
+.cm-strong {
+  color: #ffffff;
+}
+
+.markdown-preview-view code,
+.cm-inline-code {
+  color: #ffe0a3;
+  background: rgba(246, 200, 95, 0.10);
+  border: 1px solid rgba(246, 200, 95, 0.18);
+  border-radius: 6px;
+  padding: 0.05em 0.35em;
+}
+
+.markdown-preview-view pre {
+  background: rgba(6, 9, 14, 0.88);
+  border: 1px solid var(--ereport-border);
+  border-radius: 10px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.24);
+}
+
+.markdown-preview-view table {
+  border: 1px solid var(--ereport-border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.markdown-preview-view th {
+  background: rgba(90, 167, 255, 0.12);
+  color: var(--ereport-text);
+}
+
+.markdown-preview-view td,
+.markdown-preview-view th {
+  border-color: var(--ereport-border);
+}
+
+.markdown-preview-view blockquote {
+  border-left: 4px solid var(--ereport-cyan);
+  background: rgba(45, 212, 191, 0.08);
+  border-radius: 0 10px 10px 0;
+}
+
+/* Do not force .graph-view.color-fill; Obsidian graph groups own node colors. */
+.graph-view.color-line {
+  color: rgba(148, 163, 184, 0.28);
+}
+
+.graph-view.color-text {
+  color: rgba(237, 242, 255, 0.88);
+}
+
+.graph-view.color-fill-highlight,
+.graph-view.color-line-highlight {
+  color: #ffffff;
+}

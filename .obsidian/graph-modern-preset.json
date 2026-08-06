@@ -1,0 +1,107 @@
+{
+  "collapse-filter": true,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:01-Overview",
+      "color": {
+        "a": 1,
+        "rgb": 16096779
+      }
+    },
+    {
+      "query": "path:02-Architecture",
+      "color": {
+        "a": 1,
+        "rgb": 9133302
+      }
+    },
+    {
+      "query": "path:03-Backend OR path:15-Backend-Internals",
+      "color": {
+        "a": 1,
+        "rgb": 1096065
+      }
+    },
+    {
+      "query": "path:04-Frontend OR path:14-Frontend-UI",
+      "color": {
+        "a": 1,
+        "rgb": 440020
+      }
+    },
+    {
+      "query": "path:05-Database",
+      "color": {
+        "a": 1,
+        "rgb": 16347926
+      }
+    },
+    {
+      "query": "path:06-API",
+      "color": {
+        "a": 1,
+        "rgb": 3900150
+      }
+    },
+    {
+      "query": "path:07-Workflows OR path:11-Modules",
+      "color": {
+        "a": 1,
+        "rgb": 1357990
+      }
+    },
+    {
+      "query": "path:08-Ops OR path:13-Testing",
+      "color": {
+        "a": 1,
+        "rgb": 8702998
+      }
+    },
+    {
+      "query": "path:09-Decisions OR path:10-Change-Log",
+      "color": {
+        "a": 1,
+        "rgb": 15381256
+      }
+    },
+    {
+      "query": "path:12-Security",
+      "color": {
+        "a": 1,
+        "rgb": 15680580
+      }
+    },
+    {
+      "query": "path:16-Glossary",
+      "color": {
+        "a": 1,
+        "rgb": 9741240
+      }
+    },
+    {
+      "query": "file:Home OR file:Knowledge-Map OR file:Module-Index",
+      "color": {
+        "a": 1,
+        "rgb": 16777215
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1.18,
+  "lineSizeMultiplier": 0.92,
+  "collapse-forces": true,
+  "centerStrength": 0.47,
+  "repelStrength": 10.5,
+  "linkStrength": 1,
+  "linkDistance": 245,
+  "scale": 1,
+  "close": true
+}
